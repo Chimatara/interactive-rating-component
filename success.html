@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+    <link rel="stylesheet" href="css/card.css">
+</head>
+<body>
+   <div class="container">
+      <div class="card">
+         <div class="icon">
+            <img src="./interactive-rating-component-main/images/illustration-thank-you.svg" alt="">
+            <button id="selectedRatingDisplay"></button>
+         </div>
+
+         <div class="appreciation">
+            <h1>Thank you!</h1>
+            <p> We appreciate you taking the time to give a rating. If you ever need more support, 
+                don’t hesitate to get in touch!</p>
+         </div>
+    </div>
+   </div>
+
+   <script>
+      // Extract the rating from the URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const selectedRating = urlParams.get('rating');
+
+      // Display the rating on the success page
+      const selectedRatingDisplay = document.getElementById('selectedRatingDisplay');
+      if (selectedRating) {
+        selectedRatingDisplay.textContent = `You selected ${selectedRating} out of 5`;
+      }
+   </script>
+    
+
+</body>
+</html>

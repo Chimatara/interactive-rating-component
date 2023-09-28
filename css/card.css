@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Epilogue:wght@500;700&family=Overpass:wght@500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Overpass", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: hsl(216, 12%, 8%);
+}
+
+.container {
+  width: 30%;
+  height: 410px;
+  background: hsl(213, 19%, 18%);
+  border-radius: 20px;
+}
+
+.card {
+  width: 85%;
+  margin: 30px auto;
+}
+
+header button {
+  padding: 10px;
+  border-radius: 50%;
+  color: hsl(0, 0%, 100%);
+  opacity: 0.5;
+  background: hsl(216, 12%, 8%);
+  border: none;
+  outline: none;
+  width: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+header button img {
+  padding-top: 2px;
+}
+
+main .question {
+  color: hsl(0, 0%, 100%);
+}
+main .question p {
+  font-weight: 500;
+  opacity: 0.5;
+  padding: 12px 0;
+  line-height: 1.5;
+}
+main .feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0;
+}
+main .feedback button {
+  padding: 10px;
+  border-radius: 50%;
+  color: hsl(0, 0%, 100%);
+  opacity: 0.5;
+  background: hsl(216, 12%, 8%);
+  border: none;
+  outline: none;
+  width: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  height: 55px;
+  width: 55px;
+}
+main .feedback button:hover {
+  background: hsl(25, 97%, 53%);
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  opacity: 1;
+}
+main .feedback button.active {
+  background: hsl(217, 12%, 63%);
+}
+main #submit button {
+  width: 200px;
+  padding: 10px;
+  background: hsl(25, 97%, 53%);
+  border-radius: 200px;
+  border: none;
+  outline: 0;
+  color: hsl(0, 0%, 100%);
+  height: 40px;
+  width: 100%;
+  margin-top: 10px;
+}
+main #submit button:hover {
+  color: hsl(25, 97%, 53%);
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-weight: 700;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+.icon img {
+  margin: 60px 0 20px 0;
+}
+.icon button {
+  background: hsl(216, 12%, 8%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+}
+
+.appreciation {
+  text-align: center;
+  margin-top: 100px;
+  color: hsl(0, 0%, 100%);
+}
+.appreciation p {
+  font-weight: 500;
+  opacity: 0.5;
+  padding: 12px 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 1044px) {
+  .container {
+    width: 50%;
+    height: 430px;
+  }
+}
+@media (max-width: 890px) {
+  .container {
+    width: 55%;
+    height: 430px;
+  }
+}
+@media (max-width: 620px) {
+  .feedback {
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    height: 430px;
+  }
+}
+@media (max-width: 360px) {
+  .feedback {
+    gap: 10px;
+  }
+}
+@media (max-width: 300px) {
+  .container {
+    width: 100%;
+    height: 450px;
+  }
+}
