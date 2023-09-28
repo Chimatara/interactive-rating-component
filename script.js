@@ -11,7 +11,7 @@ function setSelectedRating(rating) {
   function getSelectedRating() {
     return localStorage.getItem('selectedRating');
   }
-  
+
 
   // the remove class function
 function removeClasslist() {
@@ -25,7 +25,7 @@ function removeClasslist() {
 function onClick() {
   submitButton.addEventListener("click", () => {
     const selectedRating = getSelectedRating();
-    window.location.href = `success.html?rating=${selectedRating}`;
+    window.location.href = `succes-page/success.html?rating=${selectedRating}`;
   });
 }
 onClick();
