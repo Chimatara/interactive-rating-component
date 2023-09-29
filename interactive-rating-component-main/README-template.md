@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/Chimatara/interactive-rating-component)
+- Live Site URL: [Netlify Link](https://tara-interactive-component.netlify.app/)
 
 ## My process
 
@@ -77,7 +77,7 @@ function setSelectedRating(rating) {
 
 ## Author
 
-- Website - [Chimatara Kalu](https://www.your-site.com)
+- Website - [Chimatara Kalu](https://github.com/Chimatara)
 - Frontend Mentor - [@Chimatara](https://www.frontendmentor.io/profile/Chimatara)
 - Twitter - [@taras_collectn](https://www.twitter.com/taras_collectn)
 
